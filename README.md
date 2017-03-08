@@ -173,8 +173,16 @@ Support `orderBy` field name to sort
 Use "param" as parameter key in request body
 Example of creating new environment:
 ```
-curl -X POST https://sample.com/v1/dogs -d
-' { "param": { "name": "bo", "type" : "poodle" }}'
+URL
+POST https://api.tc.appirio.net/v3/environments
+Body
+{
+   "param" : {"name":"some name", "platform":"salesforce", .....},
+   “options” : {“notify”:”true”}			-- (optional) additional parameters that do NOT belong to resource attributes
+   "method" : "post",				-- (optional) overrides method if specified
+   "return" : "(id,name,dummy)",		-- (optional) if not specified returns entire resource
+   "debug" : true/false				-- (optional)
+}
 ```
 
 ### Response
