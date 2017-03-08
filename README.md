@@ -1,4 +1,7 @@
 # Topcoder API Standards
+Current version 0.0.1
+View [Changelog](CHANGELOG.md) for updates.
+
 
 ### Guidelines
 
